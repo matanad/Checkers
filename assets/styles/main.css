@@ -1,5 +1,5 @@
-@import './setup/_typography.css';
-@import './basics/_base.css';
+@import './setup/typography.css';
+@import './basics/base.css';
 @import './cmps/games-container.css';
 @import './cmps/board.css';
 @import './cmps/cell.css';
