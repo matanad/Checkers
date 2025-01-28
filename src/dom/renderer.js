@@ -63,6 +63,8 @@ export const Renderer = function (elContainer, gameInstance, gameEvent) {
     const startNewGame = () => {
         game.initGame();
         const elBoard = container.querySelector('.board');
+        container.querySelector('.turn').innerText = 'White turn';
+        container.querySelector('.turn').classList.remove('opacity', 'black')
         elBoard.innerHTML = '';
         createBoard(game.getBoard(), elBoard);
         showControllers();

@@ -13,6 +13,7 @@
 
 .turn{
     color: aliceblue;
+    text-align: center;
 }
 .turn.black{
     color: rgb(37, 36, 36);

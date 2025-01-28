@@ -44,7 +44,18 @@
     transform: translateY(0);
     opacity: 1;
 }
-
+.wood-btn{
+    color: aliceblue;
+    font-size: 1.1em;
+    width: 120px;
+    height: 39px;
+    background-image: url(../../img/wood-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .modal.open button {
     color: aliceblue;
     font-size: 1.6em;
