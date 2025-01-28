@@ -1,10 +1,10 @@
-@import '/styles/setup/_typography.css';
-@import '/styles/basics/_base.css';
-@import '/styles/cmps/games-container.css';
-@import '/styles/cmps/board.css';
-@import '/styles/cmps/cell.css';
-@import '/styles/cmps/modal.css';
-@import '/styles/cmps/btnContainer.css';
+@import './styles/setup/_typography.css';
+@import './styles/basics/_base.css';
+@import './styles/cmps/games-container.css';
+@import './styles/cmps/board.css';
+@import './styles/cmps/cell.css';
+@import './styles/cmps/modal.css';
+@import './styles/cmps/btnContainer.css';
 
 .headline {
     font-size: 4em;
