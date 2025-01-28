@@ -16,6 +16,7 @@ export const Renderer = function (elContainer, gameInstance, gameEvent) {
         createBoard(board, elBoard);
         container.appendChild(elBoardContainer);
         document.body.addEventListener('mouseup', onMouseUp);
+        document.body.addEventListener('touchend', onMouseUp);
         createControllers(container);
     };
     const createBoard = (board, elBoard) => {
@@ -49,7 +50,9 @@ export const Renderer = function (elContainer, gameInstance, gameEvent) {
 
     const addCellEvents = (elCell) => {
         elCell.addEventListener('mousedown', (e) => onMouseDown(e, boardNum));
+        elCell.addEventListener('touchstart', (e) => onMouseDown(e, boardNum));
         elCell.addEventListener('mousemove', onMouseMove);
+        elCell.addEventListener('touchmove', onMouseMove);
     };
     const setControllersEvents = () => {
         const elResignBtn = container.querySelector('.resign-btn');
