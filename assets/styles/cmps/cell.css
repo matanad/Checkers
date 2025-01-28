@@ -1,0 +1,37 @@
+.cell.white {
+    background-color: #CEB5A7;
+}
+
+.cell.black {
+    background-color: #A17C6B;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: inset 0px 0px 0px 0px #3C887E;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cell.marked {
+    box-shadow: inset 0px 0px 23px 0px #3C887E;
+}
+
+.cell:empty {
+    cursor: auto;
+    pointer-events: none;
+}
+.cell.cursor-auto{
+    cursor: auto;
+    pointer-events: none;
+}
+
+.cell:empty.marked {
+    cursor: pointer;
+    pointer-events: all;
+}
+.dragging .cell {
+    pointer-events: all;
+}

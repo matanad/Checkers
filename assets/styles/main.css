@@ -1,0 +1,31 @@
+@import '../styles/setup/_typography.css';
+@import '../styles/basics/_base.css';
+
+@import '../styles/cmps/games-container.css';
+@import '../styles/cmps/board.css';
+@import '../styles/cmps/cell.css';
+@import '../styles/cmps/modal.css';
+@import '../styles/cmps/btnContainer.css';
+
+.headline {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.main-layout {
+    height: 100vh;
+    margin: 0;
+}
+
+.turn{
+    color: aliceblue;
+}
+.turn.black{
+    color: rgb(37, 36, 36);
+}
+
+@media screen and (min-width: 1537px) {
+    .main-layout {
+        max-width: 600px;
+    }
+}

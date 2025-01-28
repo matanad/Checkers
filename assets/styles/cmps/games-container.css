@@ -1,0 +1,7 @@
+.games-container{
+    width: 100vh;
+    max-width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+}

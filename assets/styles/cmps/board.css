@@ -1,0 +1,64 @@
+.board-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    border: 5px solid #614437;
+}
+
+
+.board-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/wood.jpg);
+    opacity: 20%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cell.clicked .piece {
+    border: 3px solid #5275a3;
+}
+
+.cell .piece {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: -0.6px 1.1px 4px #000000be;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.cell .piece.grabbed {
+    cursor: grabbing;
+    position: fixed;
+    width: 29px;
+    height: 29px;
+    z-index: 3;
+}
+
+.piece.white {
+    background-color: #E0F2E9;
+
+}
+
+.piece.black {
+    background-color: #4e3e37;
+}
+
+.piece.king {
+    background-image: url(../../img/crown.png);
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
