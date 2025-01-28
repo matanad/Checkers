@@ -54,7 +54,17 @@
     background-repeat: no-repeat;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+}
+.game-header > h3{
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.7;
+}
+.game-header{
+    margin: 0 auto;
+}
+.add-game-btn{
+    margin-bottom: 14px;
 }
 .modal.open button {
     color: aliceblue;

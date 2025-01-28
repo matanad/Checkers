@@ -100,7 +100,7 @@ export const Renderer = function (elContainer, gameInstance, gameEvent) {
     };
     this.renderGame = () => {
         container.innerHTML = `
-            <h2 class="game-header">Game ${boardNum}</h2>
+            <div class="wood-btn game-header"><h3>Game ${boardNum}</h3></div>
             <h1 class="turn opacity">White turn</h1>
         `;
         this.createGame();
