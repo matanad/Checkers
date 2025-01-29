@@ -1,6 +1,6 @@
 'use strict'
 
-import { Renderer } from "./dom/renderer.js";
+import { Renderer } from "./ui/renderer.js";
 import { Game } from "./logic/game.js";
 import { createEventEmitter } from "./services/evet-bus.service.js";
 
