@@ -101,3 +101,9 @@ fieldset {
       forced-color-adjust: none;
     }
   }
+
+  @media (prefers-color-schem: dark){
+    :root {
+        color-scheme: light;
+    }
+  }
