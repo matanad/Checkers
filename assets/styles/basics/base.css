@@ -95,3 +95,9 @@ fieldset {
     border: none;
     padding: 0;
 }
+
+@media (forced-colors: active) {
+    * {
+      forced-color-adjust: none;
+    }
+  }
